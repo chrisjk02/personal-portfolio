@@ -4,7 +4,7 @@
 }
 
 html {
-    font-family: Monteserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -26,6 +26,24 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
+}
+
+.header .links {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-item {
+    font-weight: 500;
+    cursor: pointer;
+    padding: 20px;
+    transition: font-weight 2ms ease-in;
+}
+
+.link-item:hover {
+    font-weight: bold;
 }
 
 .main {
