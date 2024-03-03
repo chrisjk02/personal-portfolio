@@ -20,6 +20,15 @@ body {
     height: 100vh;
 }
 
+.container-item-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 15px;
+}
+
 .header {
     background-color: #DEE2E6;
     display: flex;
@@ -52,6 +61,17 @@ body {
 
 .main .container {
     grid-template-rows: 1fr 3fr;
+}
+
+.hero .hero-title {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero .hero-subtitle {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .footer {
