@@ -6,3 +6,16 @@
 html {
     font-family: Monteserrat, sans-serif;
 }
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100vw;
+    height: 100vh;
+}
