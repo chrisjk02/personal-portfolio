@@ -38,16 +38,14 @@ body {
     gap: 15px;
 }
 
-.grid-card {
-    background-color: #343A40;
-    width: 400px;
-    height: 400px;
+.title {
+    font-size: 22px;
+    font-weight: 600;
 }
 
-.grid-card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.subtitle {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .header {
@@ -84,13 +82,32 @@ body {
     grid-template-rows: 1fr 3fr;
 }
 
-.hero .hero-title {
+#projectGrid .container-item-flex {
+    padding: 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-card {
+    background-color: #343A40;
+    width: 400px;
+    height: 400px;
+    display: flex;
+}
+
+.grid-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .title {
     font-size: 45px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.hero .hero-subtitle {
+.hero .subtitle {
     font-size: 20px;
     font-weight: 500;
 }
