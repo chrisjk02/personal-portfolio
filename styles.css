@@ -29,6 +29,27 @@ body {
     gap: 15px;
 }
 
+.container-item-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    place-items: center;
+    padding: 50px;
+    gap: 15px;
+}
+
+.grid-card {
+    background-color: #343A40;
+    width: 400px;
+    height: 400px;
+}
+
+.grid-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .header {
     background-color: #DEE2E6;
     display: flex;
