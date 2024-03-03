@@ -50,6 +50,10 @@ body {
     background-color: white;
 }
 
+.main .container {
+    grid-template-rows: 1fr 3fr;
+}
+
 .footer {
     background-color: #343A40;
 }
