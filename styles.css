@@ -15,7 +15,23 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 200px;
+    grid-template-rows: 75px 1fr;
     width: 100vw;
     height: 100vh;
+}
+
+.header {
+    background-color: #DEE2E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.main {
+    background-color: white;
+}
+
+.footer {
+    background-color: #343A40;
 }
