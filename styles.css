@@ -157,11 +157,6 @@ body {
 }
 
 #prjMainContent div.flex-item {
-    width: 60%;
     align-items: center;
     text-align: center;
-}
-
-#prjMainContent img {
-    height: 300px;
 }
