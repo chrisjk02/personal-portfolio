@@ -92,10 +92,6 @@ body {
     align-items: center;
 }
 
-.menu-toggle {
-    display: none;
-}
-
 .hero .title-lg {
     margin-bottom: 10px;
 }
