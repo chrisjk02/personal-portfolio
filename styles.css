@@ -107,16 +107,18 @@ body {
 .header {
     background-color: #DEE2E6;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 1rem;
 }
 
 .header .links {
     display: flex;
-    gap: 20px;
+    gap: 1rem;
     justify-content: space-between;
     align-items: center;
 }
