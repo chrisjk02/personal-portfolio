@@ -25,6 +25,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 75px 1fr;
+    grid-auto-rows: 1fr;
     width: 100vw;
     height: 100vh;
 }
@@ -57,10 +58,14 @@ body {
     font-weight: 400;
 }
 
+.title-md {
+    font-size: 32px;
+    font-weight: bold;
+}
+
 .title-lg {
     font-size: 45px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
 .subtitle-lg {
@@ -82,6 +87,10 @@ body {
     gap: 20px;
     justify-content: space-between;
     align-items: center;
+}
+
+.hero .title-lg {
+    margin-bottom: 10px;
 }
 
 .link-item {
@@ -116,7 +125,7 @@ body {
     height: 400px;
 }
 
-.grid-card-image {
+.bg-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -124,4 +133,20 @@ body {
 
 .footer {
     background-color: #343A40;
+}
+
+/* INF132.html */
+#mainContent.container {
+    grid-template-rows: 1fr 3fr 4fr;
+    place-items: center;
+}
+
+#mainContent div.flex-item {
+    width: 60%;
+    align-items: center;
+    text-align: center;
+}
+
+#mainContent img {
+    height: 300px;
 }
