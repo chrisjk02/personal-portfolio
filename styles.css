@@ -12,6 +12,23 @@ a:visited {
     all: unset;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 html {
     font-family: "Montserrat", sans-serif;
 }
@@ -22,11 +39,13 @@ body {
     overflow-x: hidden;
 }
 
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75px 1fr;
+    grid-template-rows: 1fr 5fr;
     grid-auto-rows: 1fr;
+    place-items: center;
     width: 100vw;
     height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
 }
@@ -35,15 +54,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 50px;
     gap: 15px;
 }
 
 .grid-item {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
     place-items: center;
     padding: 30px;
     gap: 30px;
@@ -76,14 +95,23 @@ body {
     color: #495057;
 }
 
+.title,
+.subtitle,
+.title-md,
+.title-lg,
+.subtitle-lg {
+    text-align: center;
+}
+
 
 .header {
     background-color: #DEE2E6;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 20px 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
 }
 
 .header .links {
