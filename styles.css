@@ -43,7 +43,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 0.2fr 5fr;
     grid-auto-rows: 1fr;
     place-items: center;
     min-width: 100vw;
@@ -109,21 +109,15 @@ body {
 
 .header {
     background-color: #DEE2E6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    gap: 1rem;
 }
 
-.header .links {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    align-items: center;
+.header .flex-item {
+    flex-direction: row;
 }
 
 #landing .header {
@@ -207,4 +201,27 @@ body {
 #prjMainContent div.flex-item {
     align-items: center;
     text-align: center;
+}
+
+@media only screen and (max-width: 550px) {
+    .container {
+        grid-template-rows: 0.4fr 1fr;
+    }
+
+    .header .flex-item {
+        width: 80%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .header .link-item {
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 12px;
+        transition: font-weight 2ms ease-in;
+    }
+
+    .header .link-item:hover {
+        font-weight: bold;
+    }
 }
