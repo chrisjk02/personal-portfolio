@@ -56,6 +56,7 @@ body {
 .subtitle {
     font-size: 14px;
     font-weight: 400;
+    color: #495057;
 }
 
 .title-md {
@@ -69,8 +70,9 @@ body {
 }
 
 .subtitle-lg {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
+    color: #495057;
 }
 
 
