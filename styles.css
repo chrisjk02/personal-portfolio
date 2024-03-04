@@ -44,7 +44,7 @@ body {
     grid-template-rows: repeat(auto-fit, 1fr);
     place-items: center;
     padding: 50px;
-    gap: 15px;
+    gap: 30px;
 }
 
 .title {
