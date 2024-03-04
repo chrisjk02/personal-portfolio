@@ -41,7 +41,7 @@ body {
 
 .grid-item {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fit, 1fr);
     place-items: center;
     padding: 50px;
@@ -120,9 +120,9 @@ body {
 }
 
 .grid-card {
-    background-color: #343A40;
     width: 400px;
     height: 400px;
+    padding: 20px;
 }
 
 .bg-image {
