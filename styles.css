@@ -29,7 +29,7 @@ body {
     height: 100vh;
 }
 
-.container-item-flex {
+.flex-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +38,7 @@ body {
     gap: 15px;
 }
 
-.container-item-grid {
+.grid-item {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fit, 1fr);
@@ -91,7 +91,7 @@ body {
     grid-template-rows: 1fr 3fr;
 }
 
-#projectGrid .container-item-flex {
+#projectGrid .flex-item {
     padding: 0px;
     align-items: center;
     text-align: center;
