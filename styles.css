@@ -146,7 +146,7 @@ body {
     font-weight: 500;
     cursor: pointer;
     padding: 20px;
-    transition: font-weight 2ms ease-in;
+    transition: font-weight 200ms ease-in;
 }
 
 .link-item:hover {
