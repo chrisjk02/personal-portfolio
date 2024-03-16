@@ -77,7 +77,7 @@ body {
 }
 
 .subtitle {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     color: #495057;
 }
@@ -102,9 +102,22 @@ body {
 .subtitle,
 .title-md,
 .title-lg,
-.subtitle-lg {
+.subtitle-lg,
+.text {
     text-align: center;
     width: 60%;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+    text-align: left;
+}
+
+.text ul {
+    text-align: left;
+    line-height: 1.2rem;
 }
 
 
